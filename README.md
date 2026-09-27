@@ -319,7 +319,7 @@ Set the required API credentials:
 
 ```ini
 # Primary Model API Configuration
-EURON_API_KEY=your_api_key_here
+API_KEY=your_api_key_here
 
 # LangSmith Observability & Tracing
 LANGSMITH_TRACING=true
