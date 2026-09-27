@@ -22,14 +22,15 @@ agent=create_agent(
     tools=[calculator,mock_search]
 )
 
-query = input("Enter your question: ")
-response = agent.invoke(
-    {
-        "messages":[
-            {"role":"user","content":query}
-        ]
-    }
-)
+if __name__ == "__main__":
+    query = input("Enter your question: ")
+    response = agent.invoke(
+        {
+            "messages":[
+                {"role":"user","content":query}
+            ]
+        }
+    )
 
-print("\nAnswers")
-print(response["messages"][-1].content)
+    print("\nAnswers")
+    print(response["messages"][-1].content)

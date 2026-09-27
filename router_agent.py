@@ -86,3 +86,7 @@ print("\nSelected Agent")
 print(response["category"])
 print("\nAnswer")
 print(response["answer"])
+png = agent.get_graph().draw_mermaid_png()
+with open("router_agent.png", "wb") as f:
+    f.write(png)
+print("Graph saved as router_agent.png")
